@@ -1,0 +1,27 @@
+{
+    "results": [
+        {
+            "objectId": "HsH2lwPvoH63MwWN",
+            "description": "Coworking Test description",
+            "createdAt": "2023-01-23T11:55:07.227Z",
+            "updatedAt": "2023-01-23T13:39:38.974Z",
+            "email": "stephan.breidenbach@solingen.de",
+            "location": {
+                "id": "CoworkingLocationId",
+                "address": {
+                    "name": "coworkit",
+                    "streetAddress": "Gr\u00fcnewalder-Str. 29-31",
+                    "addressLocality": "Gr\u00fcnder und Technologiezentrum",
+                    "postalCode": "42657"
+                },
+                "geopoint": {
+                    "__type": "GeoPoint",
+                    "latitude": 51.162517,
+                    "longitude": 7.07797
+                }
+            },
+            "phone": "+49 212 24940",
+            "url": "https://coworkit.cobot.me/"
+        }
+    ]
+}

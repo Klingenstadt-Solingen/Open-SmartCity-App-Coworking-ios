@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083D1B6B2819612E00B9E0EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 083D1B6D2819612E00B9E0EF /* Localizable.strings */; };
+		087C0221281150A00076EFD2 /* OSCACoworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087C02182811509F0076EFD2 /* OSCACoworking.framework */; platformFilter = ios; };
+		087C0226281150A00076EFD2 /* OSCACoworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C0225281150A00076EFD2 /* OSCACoworkingTests.swift */; };
+		087C0227281150A00076EFD2 /* OSCACoworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 087C021B2811509F0076EFD2 /* OSCACoworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0886289E28168CE0006833E6 /* OSCACoworkingFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886289D28168CE0006833E6 /* OSCACoworkingFormData.swift */; };
+		088628A028169AF7006833E6 /* OSCACoworkingFormContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0886289F28169AF7006833E6 /* OSCACoworkingFormContact.swift */; };
+		088628A22816CB5D006833E6 /* OSCAClassRequestResource+CoworkingFromContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088628A12816CB5D006833E6 /* OSCAClassRequestResource+CoworkingFromContact.swift */; };
+		088628A42816CD06006833E6 /* OSCAUploadRequestResource+CoworkingFromData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088628A32816CD06006833E6 /* OSCAUploadRequestResource+CoworkingFromData.swift */; };
+		088F94B128214603003BBEA0 /* OSCACoworkingParseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F94B028214603003BBEA0 /* OSCACoworkingParseConfig.swift */; };
+		088F94B3282146F0003BBEA0 /* OSCAConfigRequestResource+CoworkingParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F94B2282146F0003BBEA0 /* OSCAConfigRequestResource+CoworkingParams.swift */; };
+		08F087C5281190B600A74327 /* OSCANetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F087C4281190B600A74327 /* OSCANetworkService.framework */; };
+		08F087C6281190B600A74327 /* OSCANetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08F087C4281190B600A74327 /* OSCANetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08F087C9281190FF00A74327 /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F087C8281190FF00A74327 /* OSCAEssentials.framework */; };
+		08F087CA281190FF00A74327 /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08F087C8281190FF00A74327 /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08F087CC281191CA00A74327 /* OSCACoworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F087CB281191CA00A74327 /* OSCACoworking.swift */; };
+		113785B32861DF9000007561 /* OSCACoworkingDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113785B22861DF9000007561 /* OSCACoworkingDIContainer.swift */; };
+		113785C22861E23300007561 /* OSCACoworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113785C12861E23300007561 /* OSCACoworkingError.swift */; };
+		1144CCDA297E7DE900800353 /* OSCACoworkingFormContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144CCD9297E7DE900800353 /* OSCACoworkingFormContactTests.swift */; };
+		1144CCFF297EC29E00800353 /* OSCACoworkingFormContactTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 1144CCFE297EC29E00800353 /* OSCACoworkingFormContactTests.json */; };
+		1173D217287D8E800059778C /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173D216287D8E800059778C /* Notification+Name.swift */; };
+		11A5FCEC287C34600066ECFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11A5FCEA287C345F0066ECFE /* Localizable.strings */; };
+		11B2976728DB54FC006D9058 /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11B2976528DB54FB006D9058 /* API_Release.plist */; };
+		11B2976828DB54FC006D9058 /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11B2976628DB54FC006D9058 /* API_Develop.plist */; };
+		11E808212873058A008BB97A /* OSCATestCaseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E808202873058A008BB97A /* OSCATestCaseExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		087C0222281150A00076EFD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087C020F2811509F0076EFD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 087C02172811509F0076EFD2;
+			remoteInfo = OSCACoworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08F087C7281190B600A74327 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08F087C6281190B600A74327 /* OSCANetworkService.framework in Embed Frameworks */,
+				08F087CA281190FF00A74327 /* OSCAEssentials.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		083D1B6C2819612E00B9E0EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		083D1B6E2819613000B9E0EF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		087C02182811509F0076EFD2 /* OSCACoworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCACoworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087C021B2811509F0076EFD2 /* OSCACoworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCACoworking.h; sourceTree = "<group>"; };
+		087C0220281150A00076EFD2 /* OSCACoworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCACoworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		087C0225281150A00076EFD2 /* OSCACoworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingTests.swift; sourceTree = "<group>"; };
+		0886289D28168CE0006833E6 /* OSCACoworkingFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingFormData.swift; sourceTree = "<group>"; };
+		0886289F28169AF7006833E6 /* OSCACoworkingFormContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingFormContact.swift; sourceTree = "<group>"; };
+		088628A12816CB5D006833E6 /* OSCAClassRequestResource+CoworkingFromContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCAClassRequestResource+CoworkingFromContact.swift"; sourceTree = "<group>"; };
+		088628A32816CD06006833E6 /* OSCAUploadRequestResource+CoworkingFromData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCAUploadRequestResource+CoworkingFromData.swift"; sourceTree = "<group>"; };
+		088F94B028214603003BBEA0 /* OSCACoworkingParseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingParseConfig.swift; sourceTree = "<group>"; };
+		088F94B2282146F0003BBEA0 /* OSCAConfigRequestResource+CoworkingParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCAConfigRequestResource+CoworkingParams.swift"; sourceTree = "<group>"; };
+		08F087BF28118E7900A74327 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F087C128118E8E00A74327 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F087C4281190B600A74327 /* OSCANetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCANetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F087C8281190FF00A74327 /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F087CB281191CA00A74327 /* OSCACoworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCACoworking.swift; sourceTree = "<group>"; };
+		113785B22861DF9000007561 /* OSCACoworkingDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingDIContainer.swift; sourceTree = "<group>"; };
+		113785C12861E23300007561 /* OSCACoworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingError.swift; sourceTree = "<group>"; };
+		1144CCD9297E7DE900800353 /* OSCACoworkingFormContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACoworkingFormContactTests.swift; sourceTree = "<group>"; };
+		1144CCFE297EC29E00800353 /* OSCACoworkingFormContactTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OSCACoworkingFormContactTests.json; sourceTree = "<group>"; };
+		1173D216287D8E800059778C /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
+		118DC39C286198D700365384 /* libOSCATestCaseExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOSCATestCaseExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A5FCEB287C345F0066ECFE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11B2976528DB54FB006D9058 /* API_Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Release.plist; path = ../../../../../SupportingFiles/API_Release.plist; sourceTree = "<group>"; };
+		11B2976628DB54FC006D9058 /* API_Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Develop.plist; path = ../../../../../SupportingFiles/API_Develop.plist; sourceTree = "<group>"; };
+		11D0E09B287D42A40094C026 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		11D0E09C287D42A40094C026 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		11E808202873058A008BB97A /* OSCATestCaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCATestCaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		087C02152811509F0076EFD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F087C5281190B600A74327 /* OSCANetworkService.framework in Frameworks */,
+				08F087C9281190FF00A74327 /* OSCAEssentials.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087C021D281150A00076EFD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E808212873058A008BB97A /* OSCATestCaseExtension.framework in Frameworks */,
+				087C0221281150A00076EFD2 /* OSCACoworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083D1B682819600200B9E0EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				083D1B6D2819612E00B9E0EF /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		087C020E2811509F0076EFD2 = {
+			isa = PBXGroup;
+			children = (
+				118119DC285A0D2100253965 /* scripts */,
+				087C021A2811509F0076EFD2 /* OSCACoworking */,
+				087C0224281150A00076EFD2 /* OSCACoworkingTests */,
+				087C02192811509F0076EFD2 /* Products */,
+				08F087C3281190B600A74327 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		087C02192811509F0076EFD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				087C02182811509F0076EFD2 /* OSCACoworking.framework */,
+				087C0220281150A00076EFD2 /* OSCACoworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		087C021A2811509F0076EFD2 /* OSCACoworking */ = {
+			isa = PBXGroup;
+			children = (
+				1173D208287D8D750059778C /* Deeplink */,
+				08F087B828118E0000A74327 /* Extensions */,
+				08F087B928118E0700A74327 /* Objects */,
+				113785BB2861E15C00007561 /* Error */,
+				083D1B682819600200B9E0EF /* Resources */,
+				11D0E07D287D3FCE0094C026 /* SupportingFiles */,
+				113785B22861DF9000007561 /* OSCACoworkingDIContainer.swift */,
+				08F087CB281191CA00A74327 /* OSCACoworking.swift */,
+				087C021B2811509F0076EFD2 /* OSCACoworking.h */,
+				08F087BF28118E7900A74327 /* Info.plist */,
+			);
+			path = OSCACoworking;
+			sourceTree = "<group>";
+		};
+		087C0224281150A00076EFD2 /* OSCACoworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				11828826297AD7F4009FEEEA /* Objects */,
+				087C0225281150A00076EFD2 /* OSCACoworkingTests.swift */,
+				11A5FCE9287C345F0066ECFE /* Resources */,
+				08F087C128118E8E00A74327 /* Info.plist */,
+			);
+			path = OSCACoworkingTests;
+			sourceTree = "<group>";
+		};
+		08F087B828118E0000A74327 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				088628A12816CB5D006833E6 /* OSCAClassRequestResource+CoworkingFromContact.swift */,
+				088628A32816CD06006833E6 /* OSCAUploadRequestResource+CoworkingFromData.swift */,
+				088F94B2282146F0003BBEA0 /* OSCAConfigRequestResource+CoworkingParams.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		08F087B928118E0700A74327 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0886289D28168CE0006833E6 /* OSCACoworkingFormData.swift */,
+				0886289F28169AF7006833E6 /* OSCACoworkingFormContact.swift */,
+				088F94B028214603003BBEA0 /* OSCACoworkingParseConfig.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		08F087C3281190B600A74327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11E808202873058A008BB97A /* OSCATestCaseExtension.framework */,
+				118DC39C286198D700365384 /* libOSCATestCaseExtension.a */,
+				08F087C8281190FF00A74327 /* OSCAEssentials.framework */,
+				08F087C4281190B600A74327 /* OSCANetworkService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		113785BB2861E15C00007561 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				113785C12861E23300007561 /* OSCACoworkingError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		1173D208287D8D750059778C /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				1173D216287D8E800059778C /* Notification+Name.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		118119DC285A0D2100253965 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		11828826297AD7F4009FEEEA /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1144CCFE297EC29E00800353 /* OSCACoworkingFormContactTests.json */,
+				1144CCD9297E7DE900800353 /* OSCACoworkingFormContactTests.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		11A5FCE9287C345F0066ECFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11B2976628DB54FC006D9058 /* API_Develop.plist */,
+				11B2976528DB54FB006D9058 /* API_Release.plist */,
+				11A5FCEA287C345F0066ECFE /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11D0E07D287D3FCE0094C026 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11D0E09C287D42A40094C026 /* Development.xcconfig */,
+				11D0E09B287D42A40094C026 /* Production.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		087C02132811509F0076EFD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087C0227281150A00076EFD2 /* OSCACoworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		087C02172811509F0076EFD2 /* OSCACoworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087C022A281150A00076EFD2 /* Build configuration list for PBXNativeTarget "OSCACoworking" */;
+			buildPhases = (
+				087C02132811509F0076EFD2 /* Headers */,
+				087C02142811509F0076EFD2 /* Sources */,
+				087C02152811509F0076EFD2 /* Frameworks */,
+				087C02162811509F0076EFD2 /* Resources */,
+				08F087C7281190B600A74327 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCACoworking;
+			productName = OSCACoworking;
+			productReference = 087C02182811509F0076EFD2 /* OSCACoworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		087C021F281150A00076EFD2 /* OSCACoworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087C022D281150A00076EFD2 /* Build configuration list for PBXNativeTarget "OSCACoworkingTests" */;
+			buildPhases = (
+				087C021C281150A00076EFD2 /* Sources */,
+				087C021D281150A00076EFD2 /* Frameworks */,
+				087C021E281150A00076EFD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				087C0223281150A00076EFD2 /* PBXTargetDependency */,
+			);
+			name = OSCACoworkingTests;
+			productName = OSCACoworkingTests;
+			productReference = 087C0220281150A00076EFD2 /* OSCACoworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		087C020F2811509F0076EFD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					087C02172811509F0076EFD2 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					087C021F281150A00076EFD2 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 087C02122811509F0076EFD2 /* Build configuration list for PBXProject "OSCACoworking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				Base,
+			);
+			mainGroup = 087C020E2811509F0076EFD2;
+			productRefGroup = 087C02192811509F0076EFD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				087C02172811509F0076EFD2 /* OSCACoworking */,
+				087C021F281150A00076EFD2 /* OSCACoworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		087C02162811509F0076EFD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083D1B6B2819612E00B9E0EF /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087C021E281150A00076EFD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A5FCEC287C34600066ECFE /* Localizable.strings in Resources */,
+				11B2976728DB54FC006D9058 /* API_Release.plist in Resources */,
+				1144CCFF297EC29E00800353 /* OSCACoworkingFormContactTests.json in Resources */,
+				11B2976828DB54FC006D9058 /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		087C02142811509F0076EFD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F087CC281191CA00A74327 /* OSCACoworking.swift in Sources */,
+				088F94B128214603003BBEA0 /* OSCACoworkingParseConfig.swift in Sources */,
+				113785B32861DF9000007561 /* OSCACoworkingDIContainer.swift in Sources */,
+				088F94B3282146F0003BBEA0 /* OSCAConfigRequestResource+CoworkingParams.swift in Sources */,
+				088628A22816CB5D006833E6 /* OSCAClassRequestResource+CoworkingFromContact.swift in Sources */,
+				088628A028169AF7006833E6 /* OSCACoworkingFormContact.swift in Sources */,
+				088628A42816CD06006833E6 /* OSCAUploadRequestResource+CoworkingFromData.swift in Sources */,
+				1173D217287D8E800059778C /* Notification+Name.swift in Sources */,
+				0886289E28168CE0006833E6 /* OSCACoworkingFormData.swift in Sources */,
+				113785C22861E23300007561 /* OSCACoworkingError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087C021C281150A00076EFD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144CCDA297E7DE900800353 /* OSCACoworkingFormContactTests.swift in Sources */,
+				087C0226281150A00076EFD2 /* OSCACoworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		087C0223281150A00076EFD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 087C02172811509F0076EFD2 /* OSCACoworking */;
+			targetProxy = 087C0222281150A00076EFD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		083D1B6D2819612E00B9E0EF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				083D1B6C2819612E00B9E0EF /* en */,
+				083D1B6E2819613000B9E0EF /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		11A5FCEA287C345F0066ECFE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11A5FCEB287C345F0066ECFE /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		087C0228281150A00076EFD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E09C287D42A40094C026 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		087C0229281150A00076EFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E09B287D42A40094C026 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		087C022B281150A00076EFD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E09C287D42A40094C026 /* Development.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACoworking/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.coworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		087C022C281150A00076EFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E09B287D42A40094C026 /* Production.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACoworking/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.coworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		087C022E281150A00076EFD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E09C287D42A40094C026 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACoworkingTests/Info.plist;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.coworking.OSCACoworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		087C022F281150A00076EFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E09B287D42A40094C026 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACoworkingTests/Info.plist;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.coworking.OSCACoworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		087C02122811509F0076EFD2 /* Build configuration list for PBXProject "OSCACoworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087C0228281150A00076EFD2 /* Debug */,
+				087C0229281150A00076EFD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		087C022A281150A00076EFD2 /* Build configuration list for PBXNativeTarget "OSCACoworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087C022B281150A00076EFD2 /* Debug */,
+				087C022C281150A00076EFD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		087C022D281150A00076EFD2 /* Build configuration list for PBXNativeTarget "OSCACoworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087C022E281150A00076EFD2 /* Debug */,
+				087C022F281150A00076EFD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 087C020F2811509F0076EFD2 /* Project object */;
+}
